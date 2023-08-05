@@ -41,7 +41,6 @@ function Home () {
     <>
       <Nav onSearch = {onSearch}/>
       <Cards cities = {cities} onClose = {onClose}/>
-
     </>
   )
 }
