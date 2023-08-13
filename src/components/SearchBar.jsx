@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from "../styles/SearchBar.module.css";
 
 function SearchBar ({onSearch}){
   const [city, setCity] = useState('')
@@ -10,15 +11,21 @@ function SearchBar ({onSearch}){
   }
 
   return(
-      <form onSubmit={handleSubmit}>
-        <input 
-        type="text" 
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        placeholder="Search for a City"
-        />
-        <button type='submit'>Buscar</button>
-      </form>
+      <div className={styles.searchBarContainer}>
+        <form onSubmit={handleSubmit}>
+          <input 
+          className={styles.searchBar}
+          type="text" 
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="Search for a City"
+          />
+          <button type='submit' className={styles.submitClick}>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          {/* <button className="" type='submit'>Buscar</button> */}
+        </form>
+      </div>
   )
 }
 

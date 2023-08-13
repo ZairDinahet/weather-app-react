@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(0, 0, 71); */
+  padding: 15px 35px;
+  
+  }
+
+  
+.authorContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+  
+.authorContainer ion-icon {
+  font-weight: 600;
+    color:  white;
+}
+
+.itemTextHeader {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
