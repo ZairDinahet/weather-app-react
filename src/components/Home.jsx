@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cards from './Cards';
-import Nav from './Nav';
+import Header from './Header';
 import axios from 'axios';
 
 // const apiKey = "ff86fa97f5c03b7d6467658ab38848c1"
@@ -39,7 +39,7 @@ function Home () {
   
   return(
     <>
-      <Nav onSearch = {onSearch}/>
+      <Header onSearch = {onSearch}/>
       <Cards cities = {cities} onClose = {onClose}/>
     </>
   )

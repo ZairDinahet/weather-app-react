@@ -1,4 +1,18 @@
-:root {
+body {
+  /* background-image: url('../public/img/cordillera-manana-silueta-capa-montana.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; */
+  background: url('../public/img/cordillera-manana-silueta-capa-montana.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -53,7 +67,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {

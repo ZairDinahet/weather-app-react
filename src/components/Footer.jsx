@@ -1,12 +1,10 @@
 function Footer () {
   return (
-    <>
     <footer>
       <div>
-        <p>Hcho por Zair Dinahet</p>
+        <a href="">By Zair Dinahet</a>
       </div>
     </footer>
-    </>
   )
 }
 

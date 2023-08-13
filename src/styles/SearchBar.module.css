@@ -1,0 +1,40 @@
+.searchBarContainer{
+  width: 20%;
+  position: relative;
+}
+
+.searchBarContainer form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.searchBar {
+  font-family: Manrope,Arial,sans-serif;
+  color: rgba(66, 66, 66, 0.792);
+  font-weight: 600;
+  width: 100%;
+  outline: solid 1px transparent;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+
+/* .searchBar:focus ::placeholder{
+  
+} */
+.submitClick {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  border: none;
+  background-color: white;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.submitClick ion-icon{
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+}
