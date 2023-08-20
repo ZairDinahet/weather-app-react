@@ -18,10 +18,10 @@ function SearchBar ({onSearch}){
           type="text" 
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          placeholder="Search for a City"
+          placeholder="Search City!"
           />
           <button type='submit' className={styles.submitClick}>
-            <ion-icon name="search-outline"></ion-icon>
+          <ion-icon name="search-outline"></ion-icon>
           </button>
           {/* <button className="" type='submit'>Buscar</button> */}
         </form>
