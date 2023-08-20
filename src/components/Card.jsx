@@ -1,6 +1,8 @@
+import styles from '../styles/Card.module.css'
+
 function Card ({min, max, temp, name, img, onClose}) {
   return (
-    <article>
+    <article className={styles.card}>
       <div>
         <button onClick={onClose}>x</button>
       </div>
@@ -16,7 +18,7 @@ function Card ({min, max, temp, name, img, onClose}) {
       </div>
       <h2>{name}</h2>
       <span >{temp}&deg;C</span>
-      <p>{min}&deg;C / {max}&deg;C</p>
+      <p>Min {min}&deg;C / Max {max}&deg;C</p>
       </div>
     </article>
   )
