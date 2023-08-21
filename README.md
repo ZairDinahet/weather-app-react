@@ -23,5 +23,5 @@
 ## 💻 **Preview**
 
 <p>
-<img alt='Weather App' src='./assets/WeatherApp.png'>
+<img alt='Weather App' src='./src/assets/WeatherApp.png'>
 </p>
