@@ -19,3 +19,9 @@
 🍂 npm install >> Weather-App/
 🍂 npm run dev >> Weather-App/
 ```
+
+## 💻 **Preview**
+
+<p>
+<img alt='Weather App' src='./assets/WeatherApp.png'>
+</p>
