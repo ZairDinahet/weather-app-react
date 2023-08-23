@@ -1,0 +1,47 @@
+.houly-forecast {
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 25px 25px;
+  border-radius: var(--radius-28);
+  position: absolute;
+  bottom: -245px;
+  right: 180px;
+}
+.houly-forecast .title-2{
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  display: flex;
+  margin-inline: -16px;
+
+}
+
+
+.slider-list {
+  display: flex;
+  gap: 12px;
+}
+
+.slider-list::before,
+.slider-list::after{
+  content: "";
+  min-width: 4px;
+
+}
+
+.slider-item{
+  background-color: var(--black-alpha-10);
+  border-radius: var(--radius-16);
+  width: 79px;
+}
+
+.slider-card {
+  padding: 20px;
+  border-radius: var(--radius-16);
+  text-align: center;
+}
+
+.slider-item .temp {
+  font-size: 16px;
+}
