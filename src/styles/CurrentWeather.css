@@ -7,7 +7,6 @@ article.container {
 }
 
 .current-weather-card .wrapper{
-  margin-block: 12px;
   display: flex ;
   gap: 8px;
   align-items: center;
@@ -61,8 +60,11 @@ article.container {
   font-weight: var(--weight-semiBold);
 }
 
+
+
+
 .content-right{
-  width: 50%;
+  width: 55%;
 }
 
 .content-right ion-icon{
@@ -85,7 +87,7 @@ article.container {
 
 .highlights .card-sm {
   background-color: var(--black-alpha-10);
-  padding: 10PX;
+  padding: 10px 15px;
   border-radius: var(--radius-16);
   position: relative;
 }

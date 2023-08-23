@@ -1,7 +1,8 @@
 import imagen from "../assets/cloud.png"
+import DayForecast from './DayForecast'
+import TodayAt from "./TodayAt"
 import  '../styles/CurrentWeather.css'
-
-function CurrentWeathere ({min, max, temp, name, img, sys, weather, dayData, feels_like, pressure, humidity, visibility, sunrise, sunset,onClose}) {
+function CurrentWeathere ({min, max, temp, name, img, sys, weather, dayData, feels_like, pressure, humidity, visibility, sunrise, sunset, daysForecast, hourlyWeather}) {
 
   return (
     <>
@@ -165,8 +166,12 @@ function CurrentWeathere ({min, max, temp, name, img, sys, weather, dayData, fee
         </section>
 
       </div>
-
+      
+      
     </article>
+
+    <DayForecast daysForecast={daysForecast}/>
+    <TodayAt hourlyWeather= {hourlyWeather}/>
     </>
   )
 }
