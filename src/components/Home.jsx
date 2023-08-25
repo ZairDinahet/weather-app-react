@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Cards from './Cards';
 import Header from './Header';
 import { searchCity } from '../queries/apiWeather'
@@ -158,6 +158,11 @@ function Home () {
       alert(error.message)
     }
   }
+
+  useEffect(() => {
+    const defaultCity = 'Buenos Aires'; // Cambia por el nombre de la ciudad por defecto
+    onSearch(defaultCity);
+  }, []);
 
   return(
     <>
