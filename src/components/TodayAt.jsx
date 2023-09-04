@@ -1,21 +1,21 @@
 import img from "../assets/cloud.png"
-import "../styles/TodayAt.css"
+import styles from "../styles/TodayAt.module.css"
 
 
 function TodayAt ({hourlyWeather}) {
   return (
-    <div className="section card houly-forecast">
-      <h2 className="title-2">Today at</h2>
-      <div className="slider-container">
+    <div className={styles.hourlyForecast}>
+      <h2 className={styles.title2}>Today at</h2>
+      <div className={styles.sliderContainer}>
 
-        <ul className="slider-list card-sm">
+        <ul className={styles.sliderList}>
           {hourlyWeather.map(hour => {
             return (
-          <li className="slider-item" key ={hour.id}>
-            <div className="slider-card">
-              <p className="body-3">{hour.hour}</p>
+          <li className={styles.sliderItem} key ={hour.id}>
+            <div className={styles.sliderCard}>
+              <p className={styles.body3}>{hour.hour}</p>
               <img  src={`http://openweathermap.org/img/wn/${hour.img}@2x.png`} alt="" width={40}/>
-              <p className="temp">{hour.temp}&deg;<sup>c</sup></p>
+              <p className={styles.temp}>{hour.temp}&deg;<sup>c</sup></p>
             </div>
           </li>
             )

@@ -1,0 +1,89 @@
+.contentRight{
+  width: 100%;
+}
+
+.featuredContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  border-radius: var(--radius-28);
+  padding: 20px;
+  width: 100%;
+}
+
+.highlightList {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 100%;
+  gap:15px
+}
+
+
+.highlightCard {
+  background-color: var(--black-alpha-10);
+  border-radius: var(--radius-16);
+  padding: 10px 15px 2px;
+}
+
+
+.ionIcon{
+  font-size: 30PX;
+}
+
+
+
+.title3 {
+  color: var(--on-surface-variant);
+  margin-block-end: 20px;
+}
+
+
+
+.highlightCard :is( .wrapper, .cardList, .cardItem) {
+  display: flex;;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 0px 10PX;
+  gap: 10px;
+}
+
+.cardList {
+  padding: 10px 15px;
+}
+
+.cardItem {
+  width: 100%;
+  gap: 10px;
+} 
+
+
+.label1 {
+  color: var(--on-surface-variant)
+}
+
+
+.title1 {
+  font-size: var(--title-1);
+}
+
+.title2 {
+  font-size: var(--title-2);
+  margin-bottom: 10px;
+}
+
+.title3 {
+  font-size: var(--title-3);
+  font-weight: var(--weight-semiBold);
+}
+

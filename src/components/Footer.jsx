@@ -11,8 +11,6 @@ function Footer () {
         <a href="https://github.com/ZairDinahet" target="_blank" rel="noreferrer">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        
-        
       </div>
     </footer>
   )

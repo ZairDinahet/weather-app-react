@@ -1,47 +1,42 @@
-.houly-forecast {
-  margin-top: 20px;
+.hourlyForecast {
   font-size: 12px;
   padding: 25px 25px;
   border-radius: var(--radius-28);
-  position: absolute;
-  bottom: -245px;
-  right: 180px;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  width: 100%;
 }
-.houly-forecast .title-2{
+
+.title2{
   margin-bottom: 30px;
 }
 
-.slider-container {
+.sliderContainer {
   display: flex;
   margin-inline: -16px;
 
 }
 
-
-.slider-list {
+.sliderList {
   display: flex;
   gap: 12px;
 }
 
-.slider-list::before,
-.slider-list::after{
-  content: "";
-  min-width: 4px;
 
-}
-
-.slider-item{
+.sliderItem{
   background-color: var(--black-alpha-10);
   border-radius: var(--radius-16);
-  width: 79px;
+  width: 100%;
 }
 
-.slider-card {
+.sliderCard {
   padding: 20px;
   border-radius: var(--radius-16);
   text-align: center;
 }
 
-.slider-item .temp {
+.temp {
   font-size: 16px;
 }
+
+.body3 { text-transform: capitalize; }
