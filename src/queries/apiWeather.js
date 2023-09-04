@@ -47,7 +47,7 @@ export async function weatherByHours(lat, lon) {
     let jsonWeather = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
     let dataWeather = jsonWeather.data;
 
-    let dataHours = dataWeather.list.slice(0, 8).map((day) => {
+    let dataHours = dataWeather.list.slice(0, 7).map((day) => {
       return {
         id: day.dt,
         temp: Math.round(day.main.temp),
@@ -57,18 +57,22 @@ export async function weatherByHours(lat, lon) {
     })
 
 
-    let [, , ,day1, , , , , , , ,day2, , , , , , , ,day3, , , , , , , ,day4, , , , , , , ,day5] = dataWeather.list
-    let dataDays = [day1, day2, day3, day4, day5].map((day) => {
-      return {
-        id: day.dt,
-        temp: Math.round(day.main.temp),
-        min: Math.round(day.main.temp_min),
-        max: Math.round(day.main.temp_max),
-        img: day.weather[0].icon,
-        day: getDay(day.dt, dataWeather.city.timezone),
+
+    //Estos e puede hacer con un for o filter
+    
+    let dataDays = []
+    dataWeather.list.forEach(day => {
+      if (day.dt_txt.includes("12:00:00") && dataDays.length < 5 ) {
+        dataDays.push({
+          id: day.dt,
+          temp: Math.round(day.main.temp),
+          min: Math.round(day.main.temp_min),
+          max: Math.round(day.main.temp_max),
+          img: day.weather[0].icon,
+          day: getDay(day.dt, dataWeather.city.timezone),
+        })
       }
     })
-
 
     console.log(dataDays);
     console.log(dataHours);
