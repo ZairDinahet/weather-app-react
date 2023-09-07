@@ -47,7 +47,7 @@
 
 @media (max-width: 764px) {
   .hourlyForecast {
-    width: 80vw;
+    width: 90vw;
   }
   .sliderList {
     flex-wrap: nowrap;
@@ -56,7 +56,7 @@
   
   .sliderItem{
     flex: 1 0 auto;
-    width: 30%;
+    width: 25%;
   }
 }
 
