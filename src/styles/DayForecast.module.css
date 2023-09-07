@@ -39,7 +39,7 @@
 
 @media (max-width: 764px){
   .forecastCard{
-    width: 80vw;
+    width: 90vw;
   }
   .label1 {
     font-size: var(--title-3)

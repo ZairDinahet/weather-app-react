@@ -93,13 +93,13 @@
     flex-direction: column;
   }
   .featuredContainer {
-    width: 80vw;
+    width: 90vw;
   }
   .title1 {
     font-size: var(--title-2);
   }
   .ionIcon{
-    font-size: 20PX;
+    font-size: 25PX;
   }
 }
 
