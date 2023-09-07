@@ -2,9 +2,7 @@ import axios from "axios"
 import { getDay }from "./utils"
 import { getTime }from "./utils"
 import { getHours } from "./utils"
-
-// const apiKey = "ff86fa97f5c03b7d6467658ab38848c1"
-const apiKey = "95ec01f8b61f542bd3d75bc4a0bf4394"
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export async function searchCity(city){
   try {
