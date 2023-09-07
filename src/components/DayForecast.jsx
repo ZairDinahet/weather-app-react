@@ -11,7 +11,7 @@ function DayForecast ({daysForecast}) {
           <li className={styles.cardItem} key ={day.id}>
             <div className={styles.iconWrapper}>
               <img className={styles.weatherIcon} src={`http://openweathermap.org/img/wn/${day.img}@2x.png`} width={40} height={36} />
-              <p className="title-2">{day.temp}&deg;<sup>c</sup></p>
+              <p className={styles.temp}>{day.temp}&deg;<sup>c</sup></p>
             </div>
 
             <p className={styles.label1}>{day.day}</p>

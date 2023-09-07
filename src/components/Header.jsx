@@ -7,7 +7,9 @@ function Header ({onSearch}) {
       <div className={styles.authorContainer}>
         
         <ion-icon name="cloudy-night"></ion-icon>
-        <p className={styles.itemTextHeader }>Weather app - Zair Dinahet</p>
+        <a href="https://www.linkedin.com/in/zair-dinahet-993507224/" target="_blank" rel="noreferrer">
+          <p className={styles.itemTextHeader }>Weather app - Zair Dinahet</p>
+        </a>
       </div>
       <SearchBar onSearch = {onSearch}/>
     </header>

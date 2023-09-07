@@ -73,9 +73,6 @@ export async function weatherByHours(lat, lon) {
         })
       }
     })
-
-    console.log(dataDays);
-    console.log(dataHours);
     return [dataDays, dataHours]
   } catch (error) {
     throw new Error("Ciudad no encontrada");

@@ -114,14 +114,12 @@ sup {font-size: 0.75em;}
 html {
   font-family: var(--ff-nunito-sans);
   font-size: 10px;
-  /* scroll-behavior: smooth; */
 }
 
 body {
   background-color: var(--background);
   color: var(--on-background);
   font-size: var(--body-3);
-  /* overflow: hidden; */
 }
 
 :focus-visible {
@@ -137,31 +135,3 @@ body {
   width: 6px;
   height: 6px;
 }
-
-
-
-/* @font-face {
-  font-family: "Material Symbols Rounded";
-  font-style: normal;
-  font-weight: 400;
-  src: url(./font/material-symbol-rounded.woff2)format("woff2");
-}
-
-.m-icon {
-  font-family: "Material Symbols Rounded";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2.4rem;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  font-feature-settings: "liga";
-  -webkit-font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
-  height: 1em;
-  width: 1em;
-  overflow: hidden;
-} */
