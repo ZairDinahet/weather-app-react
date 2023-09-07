@@ -1,3 +1,8 @@
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import '@sweetalert2/theme-dark/dark.css';
+import styles from '../styles/Sweet.module.css'
+
+
 const weekDayNames = [
   "Sunday",
   "Monday",
@@ -49,5 +54,15 @@ export function getHours(timeUnix, timezone){
   return `${hours % 12||12} ${period}`
 }
 
+export function alertSweet() {
+  return Swal.fire({
+    title: 'Error!',
+    text: 'The city was not found.',
+    icon: 'error',
+    confirmButtonText: 'Alright',
+    confirmButtonColor: 'hsla(0, 0%, 100%, 0.04)',
+    customClass: styles.swalStyle
+  })
+}
 
 

@@ -1,9 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+}
+
 .containerCard {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
   width: 100vw;
-  padding-top: 10px;
+  margin-top: 30px ;
+  gap: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0; 
+  transform: scale(0.8); 
+}
+
+
+.cardVisible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.cardHidden {
+  opacity: 0;
+  transform: scale(0.8);
 }
 
 
@@ -16,6 +40,39 @@
 
 .rightContentCard {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 15px;
+}
+
+.loading {
+  position: absolute; 
+  top: 40vh; 
+  left: 50vw; 
+  z-index: 2; 
+}
+
+.loading ion-icon {
+  font-size: 40px;
+  text-align: center;
+  color: var(--outline);
+  animation: rotate 600ms linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 764px){
+  .containerCard {
+    flex-direction: column;
+  }
+  .container {
+    margin-bottom: 10vw;
+  }
 }

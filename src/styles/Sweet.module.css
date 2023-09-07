@@ -1,0 +1,11 @@
+.swalStyle {
+  font-size: 1.7rem;
+  width: 400px;
+  
+}
+
+.swal2-styled:focus{
+  border: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}

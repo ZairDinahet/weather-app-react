@@ -2,27 +2,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 35px;
-  
-  }
+  padding: 20px 35px;
+}
 
   
 .authorContainer {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  width: 200px;
+  width: 255px;
 }
   
 .authorContainer ion-icon {
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 600;
   /* color:  rgba(255, 255, 255, 0.2); */
 }
 
 .itemTextHeader {
-  font-size: 14px;
-  font-weight: 300;
+  font-size: var(--title-2);
+  font-weight: 400;
   line-height: 1 ;
   /* color: rgba(255, 255, 255, 0.2); */
+}
+
+
+
+@media (max-width: 764px){
+  /* .itemTextHeader {
+    font-size: var(--title-3);
+  } */
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

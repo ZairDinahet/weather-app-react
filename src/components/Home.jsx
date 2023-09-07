@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { searchCity } from '../queries/apiWeather'
+import { weatherByHours } from '../queries/apiWeather';
+import { alertSweet } from '../queries/utils'
 import Card from './Card';
 import Header from './Header';
-import Footer from './Footer';
-import styles from '../styles/Home.module.css';
-import { searchCity } from '../queries/apiWeather'
-import { weatherByHours } from '../queries/apiWeather'
 
 function Home () {
   const [town, setTown] = useState([])
@@ -12,9 +11,14 @@ function Home () {
   const [daysForecast, setdaysForecast] = useState([])
   
   async function onSearch(city) {
+    let currentTown = town;
+    let currentHourlyWeather = hourlyWeather;
+    let currentDaysForecast = daysForecast;
+    setTown([])
+
     try {
       const cityData = await searchCity(city);
-      if (cityData !== null) { // Comprueba si cityData no es null
+      if (cityData !== null) {
         const cityDataTime = await weatherByHours(cityData.lat, cityData.lon);
   
         setTown(cityData);
@@ -22,12 +26,21 @@ function Home () {
         sethourlyWeather(cityDataTime[1]);
       }
     } catch (error) {
-      alert(error.message)
+      alertSweet()
+      .then(response => {
+        if(response.isConfirmed){
+          setTown(currentTown)
+          sethourlyWeather(currentHourlyWeather)
+          setdaysForecast(currentDaysForecast)
+          return
+        }
+        }
+      )
     }
   }
 
   useEffect(() => {
-    const defaultCity = 'Buenos Aires'; // Cambia por el nombre de la ciudad por defecto
+    const defaultCity = 'Buenos Aires';
     onSearch(defaultCity);
   }, []);
 
@@ -35,7 +48,6 @@ function Home () {
     <>
       <Header onSearch = {onSearch}/>
       <Card town = {town} daysForecast={daysForecast} hourlyWeather={hourlyWeather}/>
-      {/* <Footer /> */}
     </>
   )
 }

@@ -3,9 +3,7 @@ import styles from '../styles/CurrentWeather.module.css'
 function CurrentWeathere ({temp, name, img, sys, weather, dayData}) {
 
   return (
-    <article className={styles.container}>  
-      <div className="content-left">
-        <section className="current-weather">
+        <section className={styles.container}>
           <div className={styles.currentWeatherCard}>
             <h2 className= {styles.title2}>Now</h2>
 
@@ -36,9 +34,6 @@ function CurrentWeathere ({temp, name, img, sys, weather, dayData}) {
             </ul>
           </div>
         </section>
-      </div>
-    </article>
-
   )
 }
 

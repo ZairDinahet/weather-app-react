@@ -13,6 +13,7 @@
 
 .sliderContainer {
   display: flex;
+  justify-content: center;
   margin-inline: -16px;
 
 }
@@ -39,4 +40,30 @@
   font-size: 16px;
 }
 
-.body3 { text-transform: capitalize; }
+
+@media (max-width: 764px) {
+  .hourlyForecast {
+    width: 80vw;
+  }
+  .sliderList {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  
+  .sliderItem{
+    flex: 1 0 auto;
+    width: 30%;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1023px) {
+  .hourlyForecast{
+    position: absolute;
+    width: 625px;
+    top: 600px;
+    right: 0px;
+}
+  .sliderCard {
+    padding: 16px;
+  }
+}

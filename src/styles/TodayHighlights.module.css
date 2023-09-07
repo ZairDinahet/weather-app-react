@@ -87,3 +87,18 @@
   font-weight: var(--weight-semiBold);
 }
 
+
+@media (max-width: 764px) {
+  .highlightList {
+    flex-direction: column;
+  }
+  .featuredContainer {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1023px) {
+  .highlightList {
+    flex-direction: column;
+  }
+}
