@@ -24,7 +24,7 @@
 }
 
 .label1 {
-  font-size: 12px;
+  font-size: 1.3rem;
   color: var(--on-surface-variant);
   font-weight: var(--weight-semiBold);
   text-align: right;

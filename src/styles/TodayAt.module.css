@@ -41,6 +41,10 @@
 }
 
 
+.body3 {
+  font-size: 1.3rem;
+}
+
 @media (max-width: 764px) {
   .hourlyForecast {
     width: 80vw;
@@ -60,7 +64,7 @@
   .hourlyForecast{
     position: absolute;
     width: 625px;
-    top: 600px;
+    top: 580px;
     right: 0px;
 }
   .sliderCard {
