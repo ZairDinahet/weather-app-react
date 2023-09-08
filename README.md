@@ -27,3 +27,5 @@
 </p>
 
 **You can see the project at this [link](https://zd-weather-app.netlify.app/).**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ffc202e7-418f-4f4c-9746-e7a4dcfa870a/deploy-status)](https://app.netlify.com/sites/zd-weather-app/deploys?branch=main)
