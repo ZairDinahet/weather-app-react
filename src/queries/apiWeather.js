@@ -2,12 +2,11 @@ import axios from "axios"
 import { getDay }from "./utils"
 import { getTime }from "./utils"
 import { getHours } from "./utils"
-// import apiKey from "./apiKey"
+import apiKey from "./apiKey"
 
-let api = ""
 export async function searchCity(city){
   try {
-    let jsonCity = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${api}`)
+    let jsonCity = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
     let cityData = jsonCity.data
 
     cityData = {
@@ -43,7 +42,7 @@ export async function searchCity(city){
 
 export async function weatherByHours(lat, lon) {
   try {
-    let jsonWeather = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${api}&units=metric`);
+    let jsonWeather = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
     let dataWeather = jsonWeather.data;
 
     let dataHours = dataWeather.list.slice(0, 7).map((day) => {
