@@ -1,4 +1,3 @@
-import img from "../assets/cloud.png"
 import styles from "../styles/TodayAt.module.css"
 
 
