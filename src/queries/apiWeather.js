@@ -4,7 +4,6 @@ import { getTime }from "./utils"
 import { getHours } from "./utils"
 import apiKey from "./apiKey"
 
-
 export async function searchCity(city){
   try {
     let jsonCity = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
