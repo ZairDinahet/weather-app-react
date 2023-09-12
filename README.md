@@ -6,11 +6,12 @@
 
 ## 💻 **Used Techonologies**
 
-- **HTML5**
-- **CSS Module**
-- **JavaScript (ES6)**
-- **React**
+- **React.js**
 - **Vite.js**
+- **JavaScript**
+- **CSS Module**
+- **HTML5**
+- **SweetAlert2**
 
 ## 💻 **Installation**
 
