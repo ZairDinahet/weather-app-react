@@ -21,6 +21,7 @@
 🍂 npm run dev >> Weather-App/
 ```
 
+**You need an api key to use the app, you can get it by registering at [OpenWeather](https://openweathermap.org/).**
 ## 💻 **Preview**
 
 <p>
